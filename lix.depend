@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1504010553 source:c:\users\lindtlar\documents\github\lix\lix.c
+	<stdio.h>
+	<ctype.h>
+
