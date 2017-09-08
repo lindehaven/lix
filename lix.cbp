@@ -28,12 +28,26 @@
 				</Linker>
 			</Target>
 		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Debug;Release;" />
+		</VirtualTargets>
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<ExtraCommands>
+			<Add after='cmd /c &quot;cd test &amp; RunAllTests.bat&quot;' />
+			<Mode after="always" />
+		</ExtraCommands>
 		<Unit filename="src/lix.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="test/RunAllTests.bat" />
+		<Unit filename="test/test_1_too_short.txt" />
+		<Unit filename="test/test_2_very_easy.txt" />
+		<Unit filename="test/test_3_easy.txt" />
+		<Unit filename="test/test_4_medium.txt" />
+		<Unit filename="test/test_5_difficult.txt" />
+		<Unit filename="test/test_6_very_difficult.txt" />
 		<Extensions>
 			<code_completion />
 			<envvars />
