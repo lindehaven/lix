@@ -4,3 +4,7 @@
 *.so
 *.exe
 *.dll
+
+# Project files
+*.layout
+*.depend
