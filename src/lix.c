@@ -1,37 +1,40 @@
-/*
-
-    Källa https://sv.wikipedia.org/wiki/L%C3%A4sbarhetsindex
-
-    Läsbarhetsindex (LIX) som är ett mått på hur avancerad en text är.
-    Carl-Hugo Björnsson introducerade metoden 1968. LIX-talet beräknas
-    efter ett system där antalet långa ord och antalet meningar i texten
-    viktas mot antalet ord i hela texten på följande sätt:
-
-    Parametrar:
-        O = antal ord i texten
-        M = antal meningar i texten
-        L = antal långa ord (över 6 bokstäver långa)
-
-      LIX = O / M + 100 * L / O
-
-    Formeln kan alltså förstås som antal ord per mening, adderat med
-    procentdelen av långa ord i texten. Utifrån följande skala kan man
-    värdera läsbarheten i en text:
-
-    LIX-tal för texter av olika slag:
-    Under 25    Barnböcker.
-    25 till 30  Enkla texter.
-    30 till 40  Normaltext / skönlitteratur.
-    40 till 50  Sakinformation, till exempel Wikipedia.
-    50 till 60  Facktexter.
-    Över 60	    Svåra facktexter / forskning / avhandlingar.
-
- */
-
 #include <stdio.h>
 #include <ctype.h>
 
-int main( ) {
+/**\brief
+ *  Readability Index (LIX) is a measure of how advanced a text is.
+ *  Carl-Hugo Bjornsson introduced the method 1968. The LIX number
+ *  is calculated using a system where the number of long words and
+ *  the number of sentences in the text are weighed with the the
+ *  number of words in the whole text like the following:
+ *
+ *  Formula and parameters:
+ *
+ *      LIX = W / S + 100 * L / W
+ *
+ *      W = number of words in the texts
+ *      S = number of sentences in the text
+ *      L = number of long words (longer than 6 letters)
+ *
+ *  The formula can thereby be read as "number of words per sentence
+ *  added with the percentage of long words in the text". From the
+ *  scale below it is possible to evaluate the readability of a text:
+ *
+ *  | LIX number  | Kind of text                        |
+ *  | :---------- | :---------------------------------- |
+ *  | Below 25    | Childrens books                     |
+ *  | 25 to 30    | Simple texts                        |
+ *  | 30 to 40    | Normal texts / fiction              |
+ *  | 40 to 50    | Fact texts, for example Wikipedia   |
+ *  | 50 to 60    | Fact books / white papers           |
+ *  | Above 60    | Difficult facts / research / thesis |
+ *
+ * \param argc int
+ * \param argv[] char*
+ * \return LIX number or -1 if too short text
+ *
+ */
+int main(int argc, char* argv[]) {
   float lix=0.0;
   int words=0,long_words=0,sentences=0;
   int c,size;
