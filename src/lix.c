@@ -5,8 +5,8 @@
  *  Readability Index (LIX) is a measure of how advanced a text is.
  *  Carl-Hugo Bjornsson introduced the method 1968. The LIX number
  *  is calculated using a system where the number of long words and
- *  the number of sentences in the text are weighed with the the
- *  number of words in the whole text like the following:
+ *  the number of sentences in the text are weighed with the number
+ *  of words in the whole text like the following:
  *
  *  Formula and parameters:
  *
