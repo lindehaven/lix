@@ -24,11 +24,11 @@ added with the percentage of long words in the text".
 From the scale below it is possible to evaluate the readability
 of a text:
 
-    | LIX number  | Kind of text                        |
-    | :---------- | :---------------------------------- |
-    | Below 25    | Childrens books                     |
-    | 25 to 30    | Simple texts                        |
-    | 30 to 40    | Normal texts / fiction              |
-    | 40 to 50    | Fact texts, for example Wikipedia   |
-    | 50 to 60    | Fact books / white papers           |
-    | Above 60    | Difficult facts / research / thesis |
+| LIX number  | Kind of text                        |
+| :---------- | :---------------------------------- |
+| Below 25    | Childrens books                     |
+| 25 to 30    | Simple texts                        |
+| 30 to 40    | Normal texts / fiction              |
+| 40 to 50    | Fact texts, for example Wikipedia   |
+| 50 to 60    | Fact books / white papers           |
+| Above 60    | Difficult facts / research / thesis |
