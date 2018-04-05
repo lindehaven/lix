@@ -8,7 +8,7 @@ passed=0
 script="../bin/Release/lix.exe"
 
 testcase="Too short"
-expected=$((128-1))
+expected=255
 $script < test_1_too_short.txt >/dev/null
 result=$?
 if [ $result != $expected ]; then echo error: Failure in $testcase: Expected $expected but was $result; exit 1; fi
